@@ -1,5 +1,5 @@
 # newer versions go on top
-- version: 2.13.2
+- version: 2.13.3
   changes:
     - description: Support for podman metrics collection.
       type: enhancement
