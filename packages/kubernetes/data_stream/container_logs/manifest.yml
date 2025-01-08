@@ -69,6 +69,24 @@ streams:
         show_user: false
         description: >-
           Processors are used to reduce the number of fields in the exported event or to enhance the event with metadata. This executes in the agent before the events are shipped. See [Processors](https://www.elastic.co/guide/en/beats/filebeat/current/filtering-and-enhancing-data.html) for details.
+      - name: fingerprint
+        title: Fingerprint settings
+        show_user: false
+        description: Configuration options for prospector.scanner.fingerprint. By default fingerprint is enabled, offset is 0 and length 1024.
+        type: yaml
+        default: |
+          fingerprint:
+            enabled: true
+            offset: 0
+            length: 1024
+      - name: useFingerprint
+        type: bool
+        title: Use file_identity fingerprint
+        multi: false
+        required: true
+        show_user: false
+        description: If prospector.scanner.fingerprint.enabled is set to false, file_identity fingerprint must be switched off. If it set to true, file_identity fingerprint must be switched on.
+        default: true
       - name: custom
         title: Custom configurations
         show_user: false

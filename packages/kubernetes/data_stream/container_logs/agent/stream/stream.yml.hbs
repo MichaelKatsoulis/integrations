@@ -5,11 +5,13 @@ paths:
 {{/each}}
 data_stream:
   dataset: {{data_stream.dataset}}
+prospector.scanner.symlinks: {{ symlinks }}
 prospector:
   scanner:
-    fingerprint.enabled: true
-    symlinks: {{ symlinks }}
+    {{ fingerprint }}
+{{#if useFingerprint}}
 file_identity.fingerprint: ~
+{{/if}}
 {{#if condition}}
 condition: {{ condition }}
 {{/if}}
