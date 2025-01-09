@@ -3,7 +3,7 @@
   changes:
     - description: Make fingerprint configurable
       type: enhancement
-      link: https://github.com/elastic/integrations/pull/11243
+      link: https://github.com/elastic/integrations/pull/12274
 - version: 1.68.1
   changes:
     - description: Fix Overview dashboard Kibana id
