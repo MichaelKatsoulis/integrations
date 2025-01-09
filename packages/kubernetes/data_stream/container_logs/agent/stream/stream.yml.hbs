@@ -6,11 +6,11 @@ paths:
 data_stream:
   dataset: {{data_stream.dataset}}
 prospector.scanner.symlinks: {{ symlinks }}
-prospector:
-  scanner:
-    {{ fingerprint }}
 {{#if useFingerprint}}
 file_identity.fingerprint: ~
+prospector:
+  scanner:
+    {{ fingerprintYaml }}
 {{/if}}
 {{#if condition}}
 condition: {{ condition }}
