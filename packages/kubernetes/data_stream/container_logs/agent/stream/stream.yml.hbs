@@ -10,7 +10,8 @@ prospector.scanner.symlinks: {{ symlinks }}
 file_identity.fingerprint: ~
 prospector:
   scanner:
-    {{ fingerprintYaml }}
+    fingerprint:
+      {{ fingerprintYaml }}
 {{/if}}
 {{#if condition}}
 condition: {{ condition }}
