@@ -83,7 +83,7 @@ streams:
         description: Configuration settings for prospector.scanner.fingerprint. See available options in [filestream input](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-filestream.html#filebeat-input-filestream-scan-fingerprint).
         type: yaml
         default: |
-          enabled: true
+          enabled: true # This must be set to `true`
           offset: 0
           length: 1024
       - name: custom
