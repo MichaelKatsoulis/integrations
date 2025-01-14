@@ -9,7 +9,7 @@ The `container_logs` data stream for containers' logs collection is enabled by d
 
 The Docker module is currently tested on Linux and Mac with the community edition engine, versions 1.11 and 17.09.0-ce. It is not tested on Windows, but it should also work there.
 
-The Docker module supports collection of metrics from Podman’s Docker-compatible API. It has been tested on Linux and Mac with Podman Rest API v2.0.0 and above.
+The Docker module supports collection of metrics from Podman’s Docker-compatible API on Elastic Agent 8.16.2 and 8.17.1 or more recent. It has been tested on Linux and Mac with Podman Rest API v2.0.0 and above.
 
 ## Running from within Docker
 
